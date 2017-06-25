@@ -39,10 +39,6 @@
                   scene.collisionsEnabled = true;
                   scene.activeCamera.checkCollisions = true;
 
-                  // create extra light
-                  /*var light0 = new BABYLON.DirectionalLight("Dir0", new BABYLON.Vector3(1, -1, 0), scene);
-                  light0.diffuse = new BABYLON.Color3(1, 0, 0);
-                  light0.specular = new BABYLON.Color3(1, 1, 1);*/
 
                   // set up ambient light
                   var light0 = new BABYLON.HemisphericLight("Hemi0", new BABYLON.Vector3(0, 1, 0), scene);
@@ -72,19 +68,6 @@
 
                   wall.rotation.z += 0.3;
 
-                  //for (var i = 1; i < scene.meshes.length; i++) {
-    /*if (scene.meshes[i].checkCollisions && scene.meshes[i].isVisible === false) {
-        scene.meshes[i].setPhysicsState(BABYLON.PhysicsEngine.BoxImpostor, { mass: 0,
-                                        friction: 0.5, restitution: 0.7 });
-                                        if(i % 5 == 0)*/
-                                        //scene.meshes[i].checkCollisions = true;
-        //meshesColliderList.push(scene.meshes[i]);
-  //  }
-//}
-
-                //  var meshObj = scene.getMeshByID("c94429ce-24d6-44a6-be62-c1df57b3f98e");
-                  //meshObj.checkCollisions = false;
-                //  meshObj.position.x -= 0;
                   // Wait for textures and shaders to be ready
                   scene.executeWhenReady(function () {
                       // Attach camera to canvas inputs
